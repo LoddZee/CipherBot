@@ -4,6 +4,7 @@ A simple discord bot that can create ciphers!
 ## Table of Contents
 
 * [Requirements](#requirements)
+* [Setup](#setup)
 * [Features & Commands](#features--commands)
 
 ## Requirements
@@ -18,6 +19,15 @@ pip install discord.py
 # Install dotenv
 pip install dotenv
 ```
+
+## Setup
+You will need to create a `.env` file in the root folder of the bot (where the `main.py` is located). 
+This `.env` file should look like this:
+```
+TOKEN=[BOT TOKEN]
+APP_ID=[BOT APP ID]
+```
+> Token and App ID can be both found when creating a bot using the [Discord Developer Portal](https://discord.com/developers/applications)
 
 ## Features & Commands
 This bot features 3 slash commands and a total of 8 ciphers to choose from:
@@ -38,8 +48,11 @@ This bot features 3 slash commands and a total of 8 ciphers to choose from:
 * Morse > `/encode morse MESSAGE`
 
 > Note: Any sort of KEY or VALUE with a cipher __**NEEDS**__ to be typed inside the `method` parameter.
+
 > `Shift` requires a positive integer.
+
 > `Vigenere` requires a string of alpha characters only (a-z, no numbers)
+
 > `Rail Fence` requires a positive integer.
 
 ### Encode
